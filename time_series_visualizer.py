@@ -9,7 +9,7 @@ df = pd.read_csv('/Users/yagmuraksu/Desktop/freecodecamp Data Analysis Certifica
 df.set_index('date',inplace=True)
 
 # Clean data
-df = df = df[(df['value']>= df['value'].quantile(0.025)) & (df['value'] <= df['value'].quantile(0.975))]
+df = df[(df['value']>= df['value'].quantile(0.025)) & (df['value'] <= df['value'].quantile(0.975))]
 
 
 def draw_line_plot():
